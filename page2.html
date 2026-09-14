@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday 💖</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2 class="title glow">🎂 HAPPY BIRTHDAY 🎂</h2>
+
+        <div class="content">
+
+            <!-- teks kiri -->
+            <div class="text animate-left">
+
+                <div class="name-box">
+                    <span class="small-text">to</span>
+                    Ahmad Awaludin 🤍
+                </div>
+
+                <p class="doa">
+                    Semoga selalu diberikan kesehatan,
+                    kebahagiaan, dan segala hal baik
+                    dalam hidup kamu.
+                </p>
+
+                <p class="sign">
+                    ~ made with love, for you 🎀💗
+                </p>
+
+                <p class="highlight">
+                    💌 always wishing you the best
+                </p>
+
+            </div>
+
+            <!-- gallery kanan -->
+            <div class="gallery-wrapper">
+
+                <div class="gallery">
+
+                    <img src="img/1.jfif" class="photo">
+                    <img src="img/2.jfif" class="photo">
+                    <img src="img/3.jfif" class="photo">
+                    <img src="img/4.jfif" class="photo">
+                    <img src="img/5.jfif" class="photo">
+                    <img src="img/6.jfif" class="photo">
+                    <img src="img/7.jfif" class="photo">
+                    <img src="img/9.jfif" class="photo">
+                    <img src="img/10.jfif" class="photo">
+                    <img src="img/11.jfif" class="photo">
+                    <img src="img/13.jfif" class="photo">
+                    <img src="img/14.jfif" class="photo">
+                    <img src="img/15.jfif" class="photo">
+                    <img src="img/16.jfif" class="photo">
+                    <img src="img/17.jfif" class="photo">
+                    <img src="img/18.jfif" class="photo">
+                    <img src="img/19.jfif" class="photo">
+                    <img src="img/20.jfif" class="photo">
+                    <img src="img/21.jfif" class="photo">
+                    <img src="img/22.jfif" class="photo">
+                    <img src="img/23.jfif" class="photo">
+                    <img src="img/13.jfif" class="photo">
+
+                    <!-- ulang biar scroll mulus -->
+                    <img src="img/1.jfif" class="photo">
+                    <img src="img/2.jfif" class="photo">
+                    <img src="img/3.jfif" class="photo">
+                    <img src="img/4.jfif" class="photo">
+                    <img src="img/5.jfif" class="photo">
+                    <img src="img/6.jfif" class="photo">
+                    <img src="img/7.jfif" class="photo">
+                    <img src="img/9.jfif" class="photo">
+                    <img src="img/10.jfif" class="photo">
+                    <img src="img/11.jfif" class="photo">
+                    <img src="img/13.jfif" class="photo">
+                    <img src="img/14.jfif" class="photo">
+                    <img src="img/15.jfif" class="photo">
+                    <img src="img/16.jfif" class="photo">
+                    <img src="img/17.jfif" class="photo">
+                    <img src="img/18.jfif" class="photo">
+                    <img src="img/19.jfif" class="photo">
+                    <img src="img/20.jfif" class="photo">
+                    <img src="img/21.jfif" class="photo">
+                    <img src="img/22.jfif" class="photo">
+                    <img src="img/23.jfif" class="photo">
+                    <img src="img/13.jfif" class="photo">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+
+        window.onload = function () {
+
+            // confetti tengah
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+
+            // confetti kiri kanan
+            setTimeout(() => {
+
+                confetti({
+                    particleCount: 100,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 }
+                });
+
+                confetti({
+                    particleCount: 100,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 }
+                });
+
+            }, 500);
+
+            // play music
+            document.getElementById("music").play();
+
+        };
+
+    </script>
+
+    <!-- musik -->
+    <audio id="music" loop>
+        <source src="music/lagu.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+
+</html>
